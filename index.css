@@ -1,0 +1,562 @@
+@font-face {
+    font-family: 'utendo';
+    src: url(Utendo-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* membuat style pada header */
+    background-color: rgb(132, 208, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+/* membuat style apada navigator/topnav */
+.topnav {
+    overflow: hidden;
+    background-color: bisque;
+    font-family: 'utendo';
+    margin-bottom: 20px;
+}
+
+/* membuat style link pada navigator/topnav */
+.topnav a {
+    float: left;
+    display: block;
+    color: maroon;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'utendo';
+}
+
+.topnav a:hover {
+    background-color: cornsilk;
+    color: maroon;
+    font-family: 'utendo';
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.column.side {
+    width: 25%;
+
+}
+
+/* membuat style pada column tengah */
+.column.middle {
+    width: 50%;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    background-color: bisque;
+    padding: 10px;
+    text-align: center;
+}
+
+/*  */
+
+
+
+h1 {
+    color: rgb(110, 74, 51);
+    background-color: rgb(200, 156, 112, 0.35);
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'utendo';
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("bgyay.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.biodata {
+    margin: 30px auto;
+    width: 70%;
+    background-color: rgba(255, 232, 100, 0.35);
+    color: rgb(193, 88, 59);
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.photo {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px rgb(247, 249, 249);
+}
+
+.photo img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.photo img.top {
+    opacity: 1;
+    z-index: 2;
+}
+
+.photo:hover img.top {
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.photo img.bottom {
+    opacity: 1;
+    z-index: 1;
+}
+
+.photo:hover img.bottom {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.isi {
+    font-family: "utendo";
+    font-size: large;
+}
+
+h2 {
+    color: rgb(110, 74, 51);
+    background-color: rgb(200, 156, 112, 0.35);
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: large;
+    font-family: 'utendo';
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.food-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.food-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: visible;
+}
+
+.food-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    animation: rainbowGlow 6s linear infinite;
+}
+
+.food-item img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.food-container p {
+    color: rgb(74, 97, 179);
+    border-radius: 8px;
+    padding: 6px 12px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: "utendo";
+}
+
+h2 {
+    color: rgb(110, 74, 51);
+    background-color: rgb(200, 156, 112, 0.35);
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: large;
+    font-family: 'utendo';
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.frame {
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border: none;
+    border-radius: 8px;
+    position: relative;
+    margin: 0 auto 40px auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow like the other cards */
+}
+
+.slider {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slide 9s infinite;
+}
+
+.slide {
+    width: 33.333%;
+    height: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 4px 0;
+    background: #fdf5a9;
+    /* Soft yellow matching your UI */
+    color: #2b3a67;
+    /* Dark blue text matching top labels */
+    text-align: center;
+    font-family: "utendo";
+    font-weight: 600;
+}
+
+@keyframes slide {
+
+    0%,
+    28% {
+        transform: translateX(0%);
+    }
+
+    33%,
+    61% {
+        transform: translateX(-33.333%);
+    }
+
+    66%,
+    95% {
+        transform: translateX(-66.666%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.moviecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.movieitem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.movieitem img {
+    animation: rainbowGlow 6s linear infinite;
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin: 15px;
+    transition: transform 0.3s ease;
+}
+
+
+.movieitem img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.moviecontainer p {
+    color: rgb(74, 97, 179);
+    background-color: rgb(204, 225, 254, 0.5);
+    border-radius: 5px;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+    font-family: "nexa"
+}
+
+.moviecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.movieitem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.movieitem img {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+
+.movieitem img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.moviecontainer p {
+    color: rgb(74, 97, 179);
+    background-color: rgb(204, 225, 254, 0.5);
+    border-radius: 5px;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+    font-family: "utendo"
+}
+
+
+@keyframes rainbowGlow {
+    0% {
+
+        box-shadow: 0 0 15px rgb(255, 200, 72);
+    }
+
+    25% {
+
+        box-shadow: 0 0 15px rgb(83, 152, 100);
+    }
+
+    50% {
+
+        box-shadow: 0 0 15px rgb(46, 49, 99);
+    }
+
+    75% {
+
+        box-shadow: 0 0 15px rgb(255, 145, 0);
+    }
+
+    100% {
+
+        box-shadow: 0 0 15px rgba(255, 106, 106, 0.8);
+    }
+}
+
+.bookscontainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.booksitem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.booksitem img {
+    animation: rainbowGlow 6s linear infinite;
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin: 15px;
+    transition: transform 0.3s ease;
+}
+
+
+.booksitem img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.bookscontainer p {
+    color: rgb(74, 97, 179);
+    background-color: rgb(204, 225, 254, 0.5);
+    border-radius: 5px;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+    font-family: "nexa"
+}
+
+.bookscontainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.booksitem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.booksitem img {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+
+.booksitem img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.bookscontainer p {
+    color: rgb(74, 97, 179);
+    background-color: rgb(204, 225, 254, 0.5);
+    border-radius: 5px;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+    font-family: "utendo"
+}
+
+table,
+td {
+    border: 1px solid black;
+}
+
+table,
+th {
+    border: 1px solid black;
+    text-align: center;
+    height: 30px;
+    background-color: rgb(147, 184, 216);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    background-color: rgb(228, 226, 192);
+}
+
+ol {
+    border: 1px solid black;
+    background-color: bisque;
+    margin: 10px;
+    list-style-position: inside;
+    padding: 15px 30px;
+    font-family: 'utendo';
+}
+
+ol li {
+    border: 1px solid black;
+    padding: 5px;
+    background-color: rgb(255, 249, 201);
+    text-align: justify;
+    margin: 3px 0;
+    font-family: 'utendo';
+}
+
+ul {
+    border: 1px solid black;
+    background-color: rgb(255, 249, 201);
+    font-family: 'utendo';
+    margin: 10px;
+    list-style-position: inside;
+    padding: 15px 30px;
+}
+
+ul li {
+    border: 1px solid black;
+    padding: 5px;
+    background-color: ivory;
+    text-align: justify;
+    margin: 3px 0;
+    font-family: 'utendo';
+}
+
+li.a {
+    background-color: rgb(253, 222, 222);
+}

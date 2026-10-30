@@ -1,0 +1,505 @@
+@font-face {
+    font-family: 'nexa';
+    src: url(Nexa-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: 'nexah';
+    src: url(Nexa-Heavy.ttf);
+}
+
+@font-face {
+    font-family: 'chill';
+    src: url(Chillin\ on\ Sunday.ttf);
+}
+
+@font-face {
+    font-family: 'mst';
+    src: url(Mistur\ Sleuth.ttf);
+}
+
+@font-face {
+    font-family: 'utendo';
+    src: url(Utendo-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* membuat style pada header */
+    background-color: rgb(132, 208, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+.hi {
+    color: rgb(110, 74, 51);
+    background-color: rgb(200, 156, 112, 0.35);
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'utendo';
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("bgyay.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* membuat style apada navigator/topnav */
+.topnav {
+    overflow: hidden;
+    background-color: bisque;
+    font-family: 'utendo';
+    margin-bottom: 20px;
+}
+
+.judul {
+    height: 100vh;
+    width: 100%;
+    background-image: url('title.png');
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+
+.small-text {
+    text-align: center;
+    font-family: 'nexa';
+    font-size: large;
+    display: inline-block;
+    margin: 0;
+    background-color: rgb(27, 37, 97);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 5px;
+}
+
+.title {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: 'mst', sans-serif;
+    font-size: 150px;
+    line-height: 0.9;
+    color: rgb(44, 55, 114);
+    font-family: 'nexah';
+    -webkit-text-stroke: 2px #ffffff;
+    transition: transform 0.3s ease, text-shadow 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.title:hover {
+    color: rgb(152, 180, 212);
+    transform: scale(1.05);
+    text-shadow: 0px 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+
+.fun {
+    text-align: center;
+    font-family: 'nexah';
+    font-size: medium;
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 20px;
+    background-color: rgb(27, 37, 97);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.fun:hover {
+    transform: scale(1.08);
+    text-shadow: 0px 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+
+.aboutsection {
+    display: grid;
+    background-color: antiquewhite;
+    grid-template-columns: 350px 1fr;
+    margin: 0 auto;
+    padding: 60px 20px;
+    box-sizing: border-box;
+}
+
+
+.abouttext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.abouttext h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 0 0 15px 0;
+    color: #2b3580;
+    font-family: 'nexah';
+}
+
+.abouttext .description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555555;
+    margin-bottom: 25px;
+    font-family: 'nexa';
+}
+
+.group {
+    display: flex;
+    gap: 12px;
+}
+
+.group {
+    display: flex;
+    gap: 12px;
+}
+
+.badgeprimary {
+    background-color: #3b4872;
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'nexah';
+    display: inline-block;
+    user-select: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.badgesecondary {
+    background-color: #f0f0f0;
+    color: #333333;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'nexah';
+    display: inline-block;
+    user-select: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.badgesecondary:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.badgeprimary:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.aboutcards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+
+.card {
+    height: 380px;
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+
+.card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 60%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 10px 25px rgba(27, 37, 97, 0.5), 0 0 20px rgba(100, 149, 237, 0.6);
+}
+
+.card-icon {
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.card h3 {
+    margin: 0 0 6px 0;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'nexah';
+}
+
+.card p {
+    margin: 0;
+    font-size: 13px;
+    color: #dddddd;
+    line-height: 1.4;
+    font-family: 'nexa';
+}
+
+.infosection {
+    background-color: #edcfbf88;
+    padding: 60px 20px;
+    box-sizing: border-box;
+}
+
+.infoheader {
+    text-align: right;
+    max-width: 90%;
+    margin: 0 auto 30px auto;
+}
+
+
+
+.infoheader h2 {
+    font-size: 32px;
+    color: #222;
+    margin: 5px 0 0 0;
+    font-family: 'nexah';
+}
+
+.infoheader h2 span {
+    color: rgb(27, 37, 97);
+}
+
+
+.infocontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 90%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.infomedia {
+    position: relative;
+    width: 100%;
+    height: 380px;
+}
+
+.infomedia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.floating-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(27, 37, 97);
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-family: 'nexa';
+    user-select: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.floating-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service-card {
+    padding: 20px 25px;
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+
+.service-card.active {
+    background-color: #ffffff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.service-card h3 {
+    margin: 0 0 8px 0;
+    font-family: 'nexah';
+    color: rgb(27, 37, 97);
+    font-size: 18px;
+}
+
+.service-card p {
+    margin: 0;
+    color: #555555;
+    font-size: 14px;
+    font-family: 'nexa';
+    line-height: 1.5;
+}
+
+.service-card:hover {
+    background-color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(27, 37, 97, 0.15);
+}
+
+.desc p {
+    text-indent: 40px;
+    text-align: justify;
+    font-family: 'nexa';
+    font-size: 16px;
+    line-height: 1.8;
+    padding: 6px 16px;
+    color: #333333;
+    margin-bottom: 20px;
+    background-color: antiquewhite;
+    border-radius: 3px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.desc p:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.desc h2 {
+    font-family: 'nexah';
+    background-color: burlywood;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    padding: 6px 16px;
+    display: inline-block;
+    margin: 0;
+    transition: box-shadow 0.3s ease;
+}
+
+.desc h2:hover {
+    animation: shake 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.desc {
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    padding: 6px 16px;
+    background-color: #fcf4ed;
+    background-position: 100%;
+    border-radius: 5px;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-2deg);
+    }
+
+    50% {
+        transform: rotate(2deg);
+    }
+
+    75% {
+        transform: rotate(-1deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: maroon;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'utendo';
+}
+
+.topnav a:hover {
+    background-color: cornsilk;
+    color: maroon;
+    font-family: 'utendo';
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.column.side {
+    width: 25%;
+
+}
+
+/* membuat style pada column tengah */
+.column.middle {
+    width: 50%;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    background-color: bisque;
+    padding: 10px;
+    text-align: center;
+    font-family: 'utendo';
+}
+
+/*  */
